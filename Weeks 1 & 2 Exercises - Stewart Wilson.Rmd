@@ -1,0 +1,50 @@
+---
+title: "Weeks 1 & 2 Exercises - Stewart Wilson"
+author: "Stewart Wilson"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+## Loading Data
+
+```{r packaged, include=FALSE, echo=FALSE}
+library(ggplot2)
+library(readxl)
+library(dplyr)
+library(plotly)
+```
+
+## Graphing Data
+```{r loading-data, echo=FALSE}
+hotdog <- read_excel("hotdog-contest-winners.xlsm")
+hd_place <- read_excel("hotdog-places.xlsm")
+obama <- read_excel("obama-approval-ratings.xls")
+```
+
+```{r bar}
+bar <- ggplot(data=hotdog, aes(x=Year, y=`Dogs eaten`)) + geom_bar(stat = "identity") + ggtitle("Number of Hot Dogs Eaten by Year")
+bar
+```
+
+```{r pie}
+winners_by_country <- hotdog %>% count(Country)
+lbls <- c("Germany", "Japan", "Mexico", "United States")
+pie(winners_by_country$n, labels = lbls, main="Wins by Country")
+```
+
+```{r donut}
+winners_by_country$frac = winners_by_country$n / sum(winners_by_country$n)
+winners_by_country$max = cumsum(winners_by_country$frac)
+winners_by_country$min = c(0, head(winners_by_country$max, n= -1))
+ggplot(winners_by_country, aes(ymax = max, ymin=min, xmax=4, xmin=3, fill=Country)) + geom_rect() +
+  coord_polar(theta = "y") +
+  xlim(c(2,4)) + theme_void() + ggtitle("Number of Wins by Country")
+```
+
+```{r stacked}
+stacked <- plot_ly(data=obama, x = ~Issue, y = ~Approve, type = 'bar', name = 'Approve') %>%
+    add_trace(y = ~Disapprove, name = 'Disapprove') %>%
+  add_trace(y= ~None, name ="None") %>% 
+    layout(yaxis = list(title = 'Count'), barmode = 'stack', title = "Approval by Issue")
+stacked
+```
