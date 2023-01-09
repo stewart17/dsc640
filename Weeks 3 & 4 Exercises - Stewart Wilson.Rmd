@@ -1,0 +1,38 @@
+---
+title: "Weeks 3 & 4 Exercises - Stewart Wilson"
+author: "Stewart Wilson"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Importing Data
+```{r packaged, include=FALSE, echo=FALSE}
+library(ggplot2)
+library(readxl)
+library(dplyr)
+library(plotly)
+```
+
+```{r importing}
+world_pop <- read_excel("world-population.xlsm")
+```
+## Step Chart
+
+```{r step}
+step_chart <- ggplot(data=world_pop, aes(x=Year, y=Population)) + geom_step() + 
+  ggtitle("World Population by Year") + labs(y="Population (Billions)", x = "Year")
+step_chart
+```
+
+## Line Chart
+
+You can also embed plots, for example:
+
+```{r line}
+line_chart <- ggplot(data = world_pop, aes(x=Year, y=Population)) + geom_line() + 
+  ggtitle("World Population by Year") + labs(y="Population (Billions)", x = "Year") 
+line_chart
+```
