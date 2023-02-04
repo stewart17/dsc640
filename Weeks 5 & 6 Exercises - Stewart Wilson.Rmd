@@ -1,0 +1,40 @@
+---
+title: "Weeks 5 & 6 Exercises - Stewart Wilson"
+author: "Stewart Wilson"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(readxl)
+library(dplyr)
+library(plotly)
+library(lubridate)
+library(treemap)
+```
+
+## importing data
+```{r import}
+expenditures <-  read.csv("expenditures.txt", sep="\t")
+unemployment <-  read.csv("unemployement-rate-1948-2010.csv")
+```
+
+## Area Chart
+```{r area chart}
+sums <- unemployment %>% group_by(Year) %>% summarise(Value = sum(Value))
+ggplot(sums, aes(x=Year, y=Value)) + geom_area(fill="#009E73") + xlab("Year") + ylab("Unemployment Rate") +
+  ggtitle("Unemployment Rate 1948-2010")
+```
+
+## Stacked Area Chart
+```{r stacked}
+ggplot(expenditures, aes(x=year, y=expenditure, fill=category)) +geom_area() + ggtitle("Expenditure by Category (1984-2008)") + 
+  scale_x_continuous(n.breaks=10)
+```
+
+## Tree Map
+```{r tree}
+exp_08 <- expenditures[expenditures$year == 2000,]
+treemap(exp_08, index="category", vSize="expenditure", type="index", title="Expenditures by Category (2000)")
+```
