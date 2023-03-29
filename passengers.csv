@@ -1,0 +1,59 @@
+,#,Date,Type,Operator,Fatalities,Flight type,Phase,Location,Country,Latitude,Longitude,"Ground
+fatalities","Category 
+(unconfirmed)",Scheduled,Non-Scheduled
+0,1,2015-02-04 00:00:00,ATR 72-600 (72-212A),TransAsia Airways,43.0,Domestic Scheduled Passenger,Initial Climb,"5,3 km E of Taipei-Sung Shan Airport (TSA)",Taiwan,"25,062639","121,61754",,,1,0
+1,2,2015-03-24 00:00:00,Airbus A320-211,Germanwings,150.0,International Scheduled Passenger,En Route,17 km SW of Barcelonnette,France,"44,292","6,474",,,1,0
+3,4,2015-06-25 00:00:00,de Havilland Canada DHC-3T Vazar Turbine Otter,Promech Air,9.0,Domestic Non Scheduled Passenger,En Route,"near Ella Lake, Misty Fjords National Monument, AK",United States of America,"55,486382","-131,036356",,,0,1
+4,5,2015-08-16 00:00:00,ATR 42-300,Trigana Air Service,54.0,Domestic Scheduled Passenger,En Route,"16,7 km NW of Oksibil Airport (OKL)",Indonesia,"-4,821483","140,499217",,,1,0
+5,6,2015-09-15 00:00:00,de Havilland Canada DHC-3T Texas Turbine Otter,Rainbow King Lodge,3.0,Domestic Non Scheduled Passenger,Initial Climb,"E of Iliamna-East Wind Lake Seaplane Base, AK",United States of America,"59,772177","-154,909327",,,0,1
+6,7,2015-10-02 00:00:00,de Havilland Canada DHC-6 Twin Otter 300,Aviastar Mandiri,10.0,Domestic Scheduled Passenger,En Route,Mount Latimojong,Indonesia,"-3,486928","120,098056",,,1,0
+7,8,2015-10-31 00:00:00,Airbus A321-231,Metrojet,224.0,Int'l Non Scheduled Passenger,En Route,"ca 50 km SE of Hasna, North Sinai",Egypt,"30,16928","34,172104",,,0,1
+1,2,2016-02-02 00:00:00,Airbus A321-111,Daallo Airlines,1.0,International Scheduled Passenger,En Route,near Mogadishu International Airport (MGQ),Somalia,"2,34707","45,493194",,,1,0
+2,3,2016-02-24 00:00:00,Viking Air DHC-6 Twin Otter 400,Tara Air,23.0,Domestic Scheduled Passenger,En Route,"Dana, Myagdi district",Nepal,"28,538492","83,620687",,,1,0
+4,5,2016-03-19 00:00:00,Boeing 737-8KN (WL),flydubai,62.0,International Scheduled Passenger,Approach,Rostov Airport (ROV),Russia,"47,2655","39,8292",,,1,0
+5,6,2016-04-01 00:00:00,Cessna 208B Grand Caravan,TADSA,3.0,Domestic Non Scheduled Passenger,En Route,near Tayoltita,Mexico,"23,935531","-106,393125",,,0,1
+6,7,2016-05-19 00:00:00,Airbus A320-232,EgyptAir,66.0,International Scheduled Passenger,En Route,ca 200 km N of Egyptian coast,Mediterranean Sea,"33,675704","28,7902307",,,1,0
+7,8,2016-07-20 00:00:00,Cessna 208B Grand Caravan EX,Joy General Aviation,5.0,Domestic Non Scheduled Passenger,Takeoff,off Jinshan City Beach,China,"30,715218","121,355721",,,0,1
+8,9,2016-08-31 00:00:00,Cessna 208B Grand Caravan EX,Ravn Connect,3.0,Domestic Scheduled Passenger,En Route,"10 km NW of Russian Mission Airport, AK (RSH)",United States of America,"61,825533","-161,494481",,,1,0
+9,10,2016-09-30 00:00:00,Cessna 208B Grand Caravan,Llanera de Aviación,4.0,Domestic Non Scheduled Passenger,Unknown,near San Antonio de Prado,Colombia,"6,198566","-75,647677",,,0,1
+10,11,2016-10-02 00:00:00,Cessna 208B Grand Caravan,Ravn Connect,3.0,Domestic Scheduled Passenger,En Route,"19 km W of Togiak, AK",United States of America,"59,107496","-160,678876",,,1,0
+12,13,2016-11-28 00:00:00,Avro RJ.85,LAMIA Bolivia,71.0,International Non Scheduled Passenger,En Route,S of Medellin,Colombia,"5,997332","-75,387577",,,0,1
+14,15,2016-12-07 00:00:00,ATR 42-500,PIA,48.0,Domestic Scheduled Passenger,En Route,near Havelian,Pakistan,"34,01893","73,152251",,,1,0
+2,3,2017-05-01 00:00:00,Cessna 208B Grand Caravan,Grant Aviation,1.0,Domestic Scheduled Passenger,En Route,"Chignik, AK",United States of America,,,,,1,0
+6,7,2017-11-15 00:00:00,Let L-410UVP-E20,Khabarovsk Avia,6.0,Domestic Scheduled Passenger,Approach,"1,2 km SSW of Nelkan Airport",Russia,,,,,1,0
+7,8,2017-11-15 00:00:00,Cessna 208B Grand Caravan,Coastal Aviation,11.0,Passenger,En Route,Empakaai area,Tanzania,,,,,1,0
+8,9,2017-12-13 00:00:00,ATR 42-320,West Wind Aviation,1.0,Domestic Scheduled Passenger,Initial Climb,"near Fond-du-Lac Airport, SK",Canada,,,,,1,0
+9,10,2017-12-31 00:00:00,Cessna 208B Grand Caravan,Nature Air,12.0,Domestic Non-Scheduled Passenger,Initial Climb,near Punta Islita,Costa Rica,,,,,0,1
+0,1,2018-02-11 00:00:00,Antonov An-148-100B,Saratov Airlines,71.0,Domestic Scheduled Passenger,En Route,"near Stepanovskoye, Ramenskoye District",Russia,,,,Loss of control,1,0
+1,2,2018-02-18 00:00:00,ATR 72-212,Iran Aseman Airlines,66.0,Domestic Scheduled Passenger,En Route,near Yasuj Airport (YES),Iran,,,,CFIT,1,0
+2,3,2018-03-12 00:00:00,de Havilland Canada DHC-8-402Q Dash 8,US-Bangla Airlines,51.0,International Scheduled Passenger,Landing,Kathmandu-Tribhuvan Airport (KTM),Nepal,,,,Runway excursion,1,0
+3,4,2018-04-17 00:00:00,Boeing 737-7H4 (WL),Southwest Airlines,1.0,Domestic Scheduled Passenger,En Route,"105 km NW of Philadelphia, PA",USA,,,,,1,0
+5,6,2018-05-18 00:00:00,Boeing 737-201 Adv.,Cubana de Aviación,112.0,Domestic Scheduled Passenger,Initial Climb,near Havana-José Martí International Airport (HAV),Cuba,,,,Loss of control,1,0
+6,7,2018-06-05 00:00:00,Cessna 208B Grand Caravan,Fly-SAX,10.0,Domestic Scheduled Passenger,En Route,near Njabini,Kenya,,,,,1,0
+8,9,2018-08-04 00:00:00,Junkers Ju-52/3mg4e,Ju-Air,20.0,Domestic Non-Scheduled Passenger,En route,Piz Segnas,Switzerland,,,,Loss of control,0,1
+9,10,2018-09-09 00:00:00,Let L-410UVP,Slaver Company,20.0,Passenger,Approach,Yirol Airport,South Sudan,,,,,1,0
+10,11,2018-09-28 00:00:00,Boeing 737-8BK (WL),Air Niugini,1.0,International Scheduled Passenger,Approach,off Chuuk/Weno International Airport (TKK),Micronesia,,,,CFIT,1,0
+11,12,2018-10-29 00:00:00,Boeing 737 MAX 8,Lion Air,189.0,Domestic Scheduled Passenger,En Route,off Tanjung Bungin,Indonesia,,,,Loss of control,1,0
+12,13,2018-11-09 00:00:00,Boeing 757-200,Fly Jamaica Airways,1.0,International Scheduled Passenger,Landing,Georgetown-Cheddi Jagan International Airport,Guyana,,,,Runway excursion,1,0
+2,3,2019-03-09 00:00:00,Douglas DC-3,LASER,14.0,Passenger,En route,near Villavicencio,Colombia,,,,Emergency landing,1,0
+3,4,2019-03-10 00:00:00,Boeing 737 MAX 8,Ethiopian Airlines,157.0,Scheduled Passenger,En route,near Addis Ababa,Ethiopia,,,,Loss of control,1,0
+4,5,2019-05-06 00:00:00,Sukhoi Superjet,Aeroflot,41.0,Scheduled Passenger,Landing,Moscow,Russia,,,,Emergency landing,1,0
+5,6,2019-05-13 00:00:00,DHC-3T,Taquan,1.0,Non-Scheduled Passenger,En route,"Ketchikan, AK",USA,,,,Mid-air collision,0,1
+6,7,2019-06-27 00:00:00,Antonov An-24,Angara,2.0,Scheduled Passenger,Landing,Nizhneangarsk,Russia,,,,Runway excursion,1,0
+7,8,2019-07-26 00:00:00,Cessna 208,Seair,4.0,Non-Scheduled Passenger,En route,Addenbroke Island,Canada,,,,CFIT,0,1
+8,9,2019-08-06 00:00:00,Cessna 208B,Alkan Air,2.0,Non-Scheduled Passenger,En route,near Mayo,Canada,,,,,0,1
+11,12,2019-09-23 00:00:00,Cessna 208B,Auric Air,2.0,Non-Scheduled Passenger,Takeoff,Seronera,Tanzania,,,,,0,1
+12,13,2019-10-02 00:00:00,Boeing B-17,The Collings Foundation,7.0,Non-Scheduled Passenger,Landing,"Windsor Locks, CT",USA,,,,Engine failure,0,1
+14,15,2019-10-17 00:00:00,Saab 2000,PenAir,1.0,Scheduled Passenger,Landing,"Unalaska, AK",USA,,,,Runway excursion,1,0
+15,16,2019-10-26 00:00:00,DHC-3T,Blue Water Av. Svc,3.0,Non-Scheduled Passenger,Approach,"Family Lake, MB ",Canada,,,,Structural failure,0,1
+16,17,2019-11-24 00:00:00,Dornier 228,Busy Bee,21.0,Scheduled Passenger,Takeoff,Goma,DRC,,,6.0,,1,0
+18,19,2019-12-24 00:00:00,Cessna 208B,Calafia Airlines,2.0,Scheduled Passenger,En route,Tastiota,Mexico,,,,,1,0
+19,20,2019-12-27 00:00:00,Fokker 100,Bek Air,12.0,Scheduled Passenger,Takeoff,Almaty,Kazakhstan,,,,Loss of control,1,0
+0,1,2020-01-08 00:00:00,Boeing 737-800,Ukraine Int. Airlines,176.0,Passenger,En route,near Tehran,Iran,,,,Shot down,1,0
+1,2,2020-02-05 00:00:00,Boeing 737-800,Pegasus Airlines,3.0,Passenger,Landing,Istanbul,Turkey,,,,Runway excursion,1,0
+4,5,2020-05-22 00:00:00,Airbus A320-214,PIA,97.0,Passenger,Approach,Karachi,Pakistan,,,1.0,Loss of control,1,0
+5,6,2020-08-07 00:00:00,Boeing 737-800,Air India Express,21.0,Passenger,Landing,Kozhikode,India,,,,Runway excursion,1,0
+0,1,2021-01-09 00:00:00,Boeing 737-500,Sriwijaya Air,62.0,Passenger,En route,off Jakarta,Indonesia,,,,Loss of control,1,0
+1,2,2021-03-02 00:00:00,Let L-410,South Sudan Supreme,10.0,Passenger,Initial climb,Pieri,South Sudan,,,,Loss of control,1,0
+3,4,2021-07-06 00:00:00,Antonov An-26B,Kamchatka AE,28.0,Passenger,Approach,Palana,Russia,,,,CFIT,1,0
+4,5,2021-09-12 00:00:00,Let L-410,Aeroservice,4.0,Passenger,Approach,Kazachinskoye,Russia,,,,CFIT,1,0

@@ -1,0 +1,44 @@
+---
+title: "Weeks 7 & 8 Exercises"
+author: "Stewart Wilson"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## importing data
+
+```{r libraries}
+library(ggplot2)
+
+```
+```{r importing}
+birth_rates <- read.csv("birth-rate.csv")
+crime <- read.csv("crimerates-by-state-2005.csv")
+```
+## Scatterplot
+
+You can also embed plots, for example:
+
+```{r scatter, echo=FALSE}
+filtered <- crime[crime$state != "District of Columbia",]
+filtered <- filtered[crime$state != "United States",]
+
+ggplot(filtered, aes(murder, aggravated_assault)) + geom_point(colour="blue") + ggtitle("Murder vs Aggravated Assault in US") + xlab("Murder per 100,000") + ylab("Aggravated Assault per 100,000")
+```
+F
+```{r bubbles}
+plot <- ggplot(filtered, aes(x=murder, y =aggravated_assault, size=population)) + geom_point(alpha=.7, color='blue') +
+  xlab("Murder per 100,000") + ylab("Aggravated Assault per 100,000") + ggtitle("Murder vs Aggravated Assault in U.S.")
+plot
+```
+
+##  Density Plot
+```{r density}
+birth1998 <- birth_rates$X1998
+ggplot(birth_rates, aes(x=X1998)) + geom_density(fill="#69b3a2", color="#e9ecef", alpha=0.8) +
+  ggtitle("Global Distribution of Birth Rates 1998") + xlab("Birth Rate per 1,000")
+```

@@ -1,0 +1,55 @@
+---
+title: "Weeks 11 & 12 Exercises"
+author: "Stewart Wilson"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(plotly)
+library(ggplot2)
+library(readxl)
+library(GGally)
+```
+
+## Importing Data
+
+```{r import}
+birth_rate <- read.csv("birth-rate.csv")
+crime_rates <- read.csv("crimeratesbystate-formatted.csv")
+education <- read.csv("education.csv")
+```
+
+## Histogram
+
+```{r histogram}
+hist <- ggplot(birth_rate, aes(x=X2008))+geom_histogram(fill="darkblue") + xlab("Birth Rate Per 1000") +
+  ggtitle("Global Distribution of Birth Rate, 2008")
+```
+
+
+
+## Box Plot
+```{r boxplot}
+box <- ggplot(education, aes(x=reading)) + geom_boxplot(fill="lightblue") + ggtitle("Boxplot of Reading SAT Scores in US") +
+  xlab("Reading Score")
+```
+
+## Bullet Chart
+```{r bullet}
+fig <- plot_ly(type="indicator",
+               mode="number+gauge+delta",
+               gauge=list(shape="bullet"),
+               delta=list(reference=14.25),
+               value=14.3,
+               domain=list(x=c(0,1), y=c(0,1)),
+               
+               height=150)
+fig <- fig %>% layout(title="Birth Rate US, 2008")
+```
+
+## Pairplot
+```{r pair}
+pair <- crime_rates %>% select(-state) %>% ggpairs()
+```

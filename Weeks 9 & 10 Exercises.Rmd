@@ -1,0 +1,54 @@
+---
+title: "Weeks 9 & 10 Exercises"
+author: "Stewart Wilson"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(maps)
+library(tidyverse)
+library(plotly)
+```
+
+## Heat Map
+```{r importind data, include=False, echo=False}
+costco <- read.csv("costcos-geocoded.csv")
+ppg <- read.csv("ppg2008.csv")
+```
+
+```{r heatmap}
+# create Name index and shift data frame over
+row.names(ppg) <- ppg$Name
+ppg <- ppg[,2:20]
+```
+
+```{r}
+ppg <- ppg[order(ppg$PTS),]
+# create matrix of data frame
+ppg.matrix <- data.matrix(ppg)
+
+ppg_heatmap <- heatmap(ppg.matrix, Rowv=NA, Colv=NA, col=heat.colors(256), 
+                       scale="column", margins=c(5,10))
+```
+
+## Spatial Map
+
+```{r spatial}
+# create map of US and put costsco locations on it
+map(database="state")
+symbols(costco$Longitude, costco$Latitude, circle=rep(1, length(costco$Longitude)),
+        inches=0.05, add=TRUE,bg="#0066FFFF")
+
+```
+
+## Contour Map
+
+```{r contour}
+# create contour of FGA and PTS
+fig <- plot_ly(x=ppg$FGA, y=ppg$PTS, type="contour")
+ggplot(data=ppg, aes(x=FGA, y=PTS)) +ylim(0,50) +theme_bw() + geom_point(alpha=.1, col="red")+geom_density2d(color="black") +
+  ggtitle("Contour Plot of Field Goal Attempts vs Points Scored")
+```
